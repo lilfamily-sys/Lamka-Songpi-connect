@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A searchable guide to government offices, banks, hospitals, education and essential services in Churachandpur, Manipur.">
+<meta name="theme-color" content="#102d2a">
+<title>Churachandpur Connect — Local Services Directory</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="Churachandpur Connect home"><span class="brand-mark">C</span><span>CHURACHANDPUR <small>CONNECT</small></span></a>
+  <nav><a href="#directory">Directory</a><a href="#emergency">Emergency</a><a href="#about">About</a></nav>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">YOUR DISTRICT. ONE DIRECTORY.</p>
+    <h1>Everything essential,<br><em>closer to home.</em></h1>
+    <p class="hero-sub">Find government offices, healthcare, banks, education and everyday public services across Churachandpur.</p>
+    <div class="hero-actions"><a class="btn btn-light" href="#directory">Explore services <span>↘</span></a><a class="text-link" href="#emergency">Emergency contacts <span>→</span></a></div>
+    <div class="hero-note"><span class="live-dot"></span> Local information hub · Churachandpur, Manipur</div>
+  </div>
+  <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="art-label"><b>CCP</b><span>MANIPUR · INDIA</span></div><div class="art-stamp">LOCAL<br>GUIDE<br><small>EST. 2026</small></div></div>
+</section>
+<section class="quick-strip" id="emergency"><div class="quick-heading"><span class="eyebrow">NEED HELP NOW?</span><h2>Emergency contacts</h2><p>For immediate danger, call 112.</p></div><div class="emergency-grid" id="emergencyGrid"></div></section>
+<section class="directory-section" id="directory">
+  <div class="section-head"><div><p class="eyebrow">EXPLORE THE DISTRICT</p><h2>Find a service</h2><p class="muted">Search by name, place, category or service.</p></div><div class="count-pill"><b id="resultCount">0</b> listings</div></div>
+  <div class="search-row"><label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Try “SBI”, “hospital”, “certificate”…" autocomplete="off"><kbd>/</kbd></label><button class="clear-btn" id="clearBtn">Clear</button></div>
+  <div class="filters" id="filters"></div><div class="directory-grid" id="directoryGrid" aria-live="polite"></div>
+  <div class="empty-state" id="emptyState" hidden><div>⌕</div><h3>No matching services</h3><p>Try a different keyword or category.</p></div>
+</section>
+<section class="info-band"><div><p class="eyebrow">BEFORE YOU VISIT</p><h2>Save a trip.<br><em>Check first.</em></h2></div><div class="info-copy"><p>Office hours and service availability can change due to public holidays, local notices or operational conditions. Many listings do not publish verified timings online, so this directory does not guess them.</p><a href="https://churachandpur.nic.in/" target="_blank" rel="noopener">Check official district notices ↗</a></div></section>
+<section class="about-section" id="about"><div><p class="eyebrow">ABOUT THIS DIRECTORY</p><h2>Made for everyday life in Churachandpur.</h2><p class="muted">A simple starting point for residents, students, visitors and families looking for essential services in the district.</p></div><div class="about-card"><div class="about-icon">✳</div><h3>Reliable links, clearly labelled</h3><p>Listings are based on official district information and institution websites where available. Phone numbers and hours should be reconfirmed before use.</p><a href="#sources">View information sources ↓</a></div></section>
+<section class="sources-section" id="sources"><p class="eyebrow">TRANSPARENCY</p><h2>Information sources</h2><p class="muted">Use these primary sources to verify current details and discover additional services.</p><div class="source-list" id="sourceList"></div></section>
+</main>
+<footer><div class="footer-brand">CHURACHANDPUR <b>CONNECT</b></div><p>Independent community directory · Churachandpur, Manipur, India</p><p class="footer-note">Not an official government website. Always verify critical details with the relevant office.</p><span>Directory data reviewed: 15 Nov 2026</span></footer>
+<script src="app.js"></script>
+</body></html>
